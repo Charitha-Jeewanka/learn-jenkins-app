@@ -52,7 +52,7 @@ pipeline {
                 sh '''
                     npm install netlify-cli --cache .npm
                     echo "Deploying to site id: $NETLIFY_SITE_ID"
-                    node_modules/.bin/netlify-cli status
+                    node_modules/.bin/netlify status
                 '''
             }
         }
